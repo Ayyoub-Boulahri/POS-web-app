@@ -1,0 +1,23 @@
+.nav-link{
+    color: rgb(240, 240, 240);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-item {
+    transition: 0.3s;
+    margin-right: 8px;
+}
+
+.nav-item:hover .nav-link{
+    color: black;
+}
+
+.nav-item:hover {
+    background-color: white;
+    border-radius: 4px;
+}
+
+.nav-link img {
+    width: 30px !important;
+}

@@ -1,0 +1,48 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal-body .row div.col-25{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.modal-body .row div.col-75 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    padding-top: 20px;
+    margin: auto;
+}
+
+nav {
+    background-color:#7b2cbf !important;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+.searchDiv{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: center;
+}
+
+.selectDiv {
+    margin-right: 20px;
+}
+
+.selectDiv select {
+    font-size: 18px;
+}
+
+
+
+
+
