@@ -113,5 +113,5 @@ Ce projet est sous licence [MIT](LICENSE) – voir le fichier `LICENSE` pour plu
 ## Contact  
 Pour toute question, suggestion ou bug :  
 Souad Ait Bellauali (aussi connu sous le nom **SHINIGAMI**)  
-Email : [ton email]  
+Email : ayyoubboulahri@gmail.com 
 GitHub : [https://github.com/AyoubPro44](https://github.com/AyoubPro44)  
