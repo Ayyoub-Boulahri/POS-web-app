@@ -1,117 +1,117 @@
 
-# POS‑Web‑App  
-Un système de point de vente (Point Of Sale – POS) développé en mode web pour faciliter la gestion des ventes, des produits et des utilisateurs dans un environnement commercial.
+# POS Web App  
+A Point Of Sale (POS) system developed in a web environment to facilitate the management of sales, products, and users in a business setting.
 
-## Table des matières  
-1. [Fonctionnalités](#fonctionnalités)  
-2. [Technologies utilisées](#technologies‑utilisées)  
+## Table of Contents  
+1. [Features](#features)  
+2. [Technologies Used](#technologies-used)  
 3. [Installation](#installation)  
 4. [Configuration](#configuration)  
 5. [Usage](#usage)  
-6. [Architecture & structure du projet](#architecture‑structure‑du‑projet)  
+6. [Project Architecture & Structure](#project-architecture-structure)  
 7. [Contribution](#contribution)  
-8. [Licence](#licence)  
-9. [À venir](#à‑venir)  
+8. [License](#license)  
+9. [Coming Soon](#coming-soon)  
 10. [Contact](#contact)  
 
-## Fonctionnalités  
-- Gestion des **produits** : création, modification, suppression, affichage.  
-- Gestion des **ventes** : enregistrement d’une transaction, affichage des historiques.  
-- Gestion des **utilisateurs** : authentification, rôles (admin, vendeur).  
-- Tableau de bord avec statistiques (ventes, produits les plus vendus, etc.).  
-- Interface claire et responsive (desktop + mobile).  
-- Exportation des rapports (format CSV / PDF) — *si implémenté*.  
-- Sécurité de base : hashing des mots de passe, sessions, contrôle d’accès.  
+## Features  
+- **Product Management**: creation, modification, deletion, display.  
+- **Sales Management**: transaction recording, historical display.  
+- **User Management**: authentication, roles (admin, seller).  
+- Dashboard with statistics (sales, top-selling products, etc.).  
+- Clear and responsive interface (desktop + mobile).  
+- Report export (CSV/PDF format) — *if implemented*.  
+- Basic security: password hashing, sessions, access control.  
 
-## Technologies utilisées  
-- Front‑end : HTML5, CSS3 (ou SASS/SCSS), JavaScript (ou un framework tel que React/Vue/Angular)  
-- Back‑end : [indiquer : Node.js / Express, ou PHP / Laravel, ou Python / Django, etc.]  
-- Base de données : [indiquer : MySQL, PostgreSQL, MongoDB, etc.]  
-- Autres bibliothèques / outils : [indiquer : ORM, gestion des sessions, authentification, etc.]  
-- Outils de développement : Git, GitHub, (et éventuellement Docker)  
+## Technologies Used  
+- Front-end: HTML5, CSS3 (or SASS/SCSS), JavaScript (or a framework like React/Vue/Angular)  
+- Back-end: [indicate: Node.js/Express, or PHP/Laravel, or Python/Django, etc.]  
+- Database: [indicate: MySQL, PostgreSQL, MongoDB, etc.]  
+- Other libraries/tools: [indicate: ORM, session management, authentication, etc.]  
+- Development tools: Git, GitHub, (and possibly Docker)  
 
 ## Installation  
-1. Clone le dépôt :  
+1. Clone the repository:  
    ```bash  
-   git clone https://github.com/AyoubPro44/POS‑web‑app.git  
-   cd POS‑web‑app  
+   git clone https://github.com/AyoubPro44/POS-web-app.git  
+   cd POS-web-app  
    ```  
-2. Installe les dépendances (exemple pour Node.js) :  
+2. Install dependencies (example for Node.js):  
    ```bash  
    npm install  
    ```  
-3. Configure la base de données (voir section suivante).  
-4. Lance le serveur de développement :  
+3. Configure the database (see the next section).  
+4. Start the development server:  
    ```bash  
    npm start  
    ```  
-   ou selon ton script défini (`npm run dev`, etc.).  
-5. Ouvre ton navigateur à l’adresse : `http://localhost:3000` (ou le port défini).  
+   or according to your defined script (`npm run dev`, etc.).  
+5. Open your browser at: `http://localhost:3000` (or the defined port).  
 
 ## Configuration  
-- Crée un fichier `.env` à la racine du projet contenant :  
+- Create a `.env` file at the root of the project containing:  
   ```
   DB_HOST=localhost  
   DB_PORT=3306  
-  DB_USER=ton_utilisateur  
-  DB_PASS=ton_mot_de_passe  
-  DB_NAME=nom_de_la_base  
-  JWT_SECRET=une_clé_secrète  
+  DB_USER=your_username  
+  DB_PASS=your_password  
+  DB_NAME=database_name  
+  JWT_SECRET=a_secret_key  
   PORT=3000  
   ```  
-- (Optionnel) Exécute le script de création des tables / migration :  
+- (Optional) Run the table creation/migration script:  
   ```bash  
   npm run migrate  
   ```  
-- Insère un utilisateur administrateur initial (via script ou interface).  
+- Insert an initial admin user (via script or interface).  
 
 ## Usage  
-- Connecte‑toi en tant qu’administrateur/vendeur.  
-- Ajoute des produits via le menu « Produits ».  
-- Crée une vente : sélection des produits, quantité, validation.  
-- Consulte les rapports et historiques via le tableau de bord.  
-- Déconnecte‑toi ou change de rôle selon l’accès.  
+- Log in as an administrator/seller.  
+- Add products via the "Products" menu.  
+- Create a sale: select products, quantity, confirm.  
+- View reports and histories via the dashboard.  
+- Log out or change roles based on access.
 
-## Architecture & structure du projet  
+## Project Architecture & Structure  
 ```
-/POS‑web‑app  
+/POS-web-app  
 │  
-├─ /client/              # front‑end  
-├─ /server/              # back‑end  
+├─ /client/              # front-end  
+├─ /server/              # back-end  
 │     ├─ controllers/  
 │     ├─ models/  
 │     ├─ routes/  
 │     └─ services/  
 ├─ /database/            # migrations, seeders  
-├─ /docs/                # documentation, diagrammes  
+├─ /docs/                # documentation, diagrams  
 ├─ .env.example  
 ├─ package.json  
 └─ README.md  
 ```  
-*(Adapte selon ta structure réelle.)*  
-Le code suit le modèle MVC (Modèle‑Vue‑Contrôleur) ou équivalent pour séparer logiques métier, routage et persistance.  
+*(Adjust based on your actual structure.)*  
+The code follows the MVC model (Model-View-Controller) or equivalent to separate business logic, routing, and persistence.
 
 ## Contribution  
-Les contributions sont les bienvenues !  
-1. Fork ce dépôt.  
-2. Crée une branche `feature/ma‑nouvelle‑fonctionnalité`.  
-3. Commit tes modifications (`git commit ‑m "Ajout de …"`).  
-4. Push vers ta branche (`git push`).  
-5. Ouvre une Pull Request.  
-Merci d’indiquer clairement les changements et les tests associés.  
+Contributions are welcome!  
+1. Fork this repository.  
+2. Create a branch `feature/my-new-feature`.  
+3. Commit your changes (`git commit -m "Added ..."`).  
+4. Push to your branch (`git push`).  
+5. Open a Pull Request.  
+Please clearly indicate the changes and associated tests.
 
-## Licence  
-Ce projet est sous licence [MIT](LICENSE) – voir le fichier `LICENSE` pour plus d’informations.  
+## License  
+This project is licensed under the [MIT](LICENSE) – see the `LICENSE` file for more information.
 
-## À venir  
-- 🔧 Ajout d’un système de **réductions / coupons**.  
-- 📱 Amélioration mobile / PWA (Progressive Web App).  
-- 📊 Visualisation avancée des données (graphiques, heatmaps).  
-- 🔐 Authentification OAuth (Google, Facebook).  
-- 🇫🇷 Multilingue (FR / EN).  
+## Coming Soon  
+- 🔧 Adding a **discounts/coupons** system.  
+- 📱 Mobile enhancement / PWA (Progressive Web App).  
+- 📊 Advanced data visualization (charts, heatmaps).  
+- 🔐 OAuth authentication (Google, Facebook).  
+- 🇫🇷 Multilingual support (FR / EN).  
 
 ## Contact  
-Pour toute question, suggestion ou bug :  
-Souad Ait Bellauali (aussi connu sous le nom **SHINIGAMI**)  
-Email : ayyoubboulahri@gmail.com 
-GitHub : [https://github.com/AyoubPro44](https://github.com/AyoubPro44)  
+For any questions, suggestions, or bugs:  
+Souad Ait Bellauali (also known as **SHINIGAMI**)  
+Email: ayyoubboulahri@gmail.com  
+GitHub: [https://github.com/AyoubPro44](https://github.com/AyoubPro44)  
